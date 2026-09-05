@@ -1,0 +1,48 @@
+
+section {
+    width: 50%;
+    margin: 12px auto;
+    border: 1px;
+    border-radius: 4px;
+    background-color: gainsboro;
+    padding: 12px;
+}
+
+section h2 {
+    color: brown;
+    border-bottom: 2px solid orange;
+}
+
+section ul, section article {
+    color: brown;
+}
+
+section table {
+    width: 100%;
+}
+
+section table,tr, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: left;
+    padding: 12px;
+    /* border: 1px dotted black; */
+    /* border: 1px dashed black; */
+}
+
+section table thead {
+    background-color: orange;
+}
+
+section table tbody tr:nth-child(odd){
+    background-color: rgb(198, 193, 193);
+}
+/* 
+section table tbody tr:nth-child(3){
+    background-color: gray;
+}
+
+
+section table tbody tr:nth-child(5){
+    background-color: gray;
+} */

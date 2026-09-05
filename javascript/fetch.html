@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Data</title>
+
+    <style>
+        table {
+            width: 100%;
+        }
+        table,tr, th {
+            border: 1px solid gray;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        button {
+            padding: 10px;
+            border: 0;
+            border-radius: 4px;
+        }
+
+        button#detail {
+            background-color: aquamarine;
+        }
+
+        button#edit{
+            background-color: blue;
+            color: white;
+        }
+
+        button#delete{
+            background-color: red;
+            color: white;
+        }
+
+        form {
+            margin-bottom: 10px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .input-group {
+            display: grid;
+            width: 30%;
+        }
+
+        .input-group input {
+            height: 24px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <section>
+            <h2>List user</h2>
+            <form>
+                <div class="input-group">
+                    <label>Name:</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="input-group">
+                    <label>Phone:</label>
+                    <input type="text" id="phone">
+                </div> <div class="input-group">
+                    <label>Email:</label>
+                    <input type="text" id="email">
+                </div>
+            </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Phone</th>
+                        <th>Email</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="./js/fetch.js"></script>
+</body>
+
+</html>

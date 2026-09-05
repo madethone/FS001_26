@@ -1,0 +1,45 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+header article {
+    background-color: brown;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+header article h1 {
+    text-align: center;
+    color: white;
+    margin-top: 0;
+}
+header article p {
+    text-align: center;
+    color: white;
+}
+
+header nav ul {
+    margin: 0;
+    background-color:darkgoldenrod;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    padding: 20px;
+}
+
+header nav ul li:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+}

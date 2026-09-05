@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use css responsive</title>
+    <style>
+        body {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        section h2 {
+            text-align: center;
+        }
+
+        section div {
+            display: flex;
+            margin-left: 10px;
+            margin-right: 10px;
+            gap: 10px;
+        }
+
+
+        article {
+            /* width = 33.33% */
+            width: calc(100% / 3);
+            background-color: green;
+            color: white;
+            border: 1px dotted gray;
+            border-radius: 10px;
+        }
+
+        /* Responsive */
+        @media screen and (min-width: 200px) and (max-width: 500px) {
+            section div {
+                display: block;
+            }
+
+            article {
+                width: 100%;
+                background-color: brown;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="projects">
+        <h2>My Projects</h2>
+        <div>
+            <article>
+                <h3>Porfolio</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde distinctio sunt, similique consequatur
+                    sequi tempore optio animi nemo. Exercitationem officia officiis, veniam sit ullam unde minus laborum
+                    soluta error doloremque.</p>
+            </article>
+            <article>
+                <h3>Task Management</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde distinctio sunt, similique consequatur
+                    sequi tempore optio animi nemo. Exercitationem officia officiis, veniam sit ullam unde minus laborum
+                    soluta error doloremque.</p>
+            </article>
+            <article>
+                <h3>Payroll System</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde distinctio sunt, similique consequatur
+                    sequi tempore optio animi nemo. Exercitationem officia officiis, veniam sit ullam unde minus laborum
+                    soluta error doloremque.</p>
+            </article>
+        </div>
+    </section>
+</body>
+
+</html>

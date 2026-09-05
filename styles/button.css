@@ -1,0 +1,52 @@
+/* Class selector */
+.btn-save {
+    border: 0;
+    border-radius: 5px;
+    background-color: aquamarine;
+    padding: 10px;
+}
+
+/* Class selector */
+.btn-delete {
+    border: 0;
+    border-radius: 5px;
+    background-color: red;
+    padding: 10px;
+}
+
+/* element selector:pseudo class */
+button:first-child {
+    background-color:aquamarine;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+button:nth-child(2) {
+    background-color: red;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+button:nth-child(3) {
+    background-color:green;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+p:first-child {
+    color: green;
+}
+
+p:nth-child(2) {
+    color: red;
+    font-size: 10px;
+}
+
+nav a {
+    color: brown;
+}
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px !important;
+}

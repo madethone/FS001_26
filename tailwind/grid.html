@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use grid</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+
+    <!-- Grid Column -->
+    <div class="grid grid-cols-5 gap-4">
+        <div class="bg-blue-500">01</div>
+        <div class="bg-blue-500">02</div>
+        <div class="bg-blue-500">03</div>
+
+        <div class="bg-blue-500">04</div>
+        <div class="bg-blue-500">05</div>
+        <!-- <div class="col-span-2 bg-blue-500">04</div> -->
+        <div class="bg-blue-500">06</div>
+
+        <div class="bg-blue-500">07</div>
+        <div class="bg-blue-500">08</div>
+        <div class="bg-blue-500 col-span-2">09</div>
+        <div class="bg-blue-500 col-span-5">10</div>
+        <!-- <div class="col-span-2 bg-blue-500">07</div> -->
+    </div>
+    
+    <br>
+    <br>
+    <br>
+    <div class="grid grid-rows-3 grid-flow-col">
+        <div class="bg-yellow-400 row-span-3"><img class="w-full h-24" src="/images/images.jpeg" /></div>
+        <div class="bg-blue-500">02</div>
+        <div class="bg-green-600 row-span-2">03</div>
+    </div>
+</body>
+
+</html>
